@@ -202,7 +202,8 @@
 <h4 id="语言"><a href="#语言" class="headerlink" title="语言"></a>语言</h4><p>所有 $G[Z]$ 文法的句子的集合叫做文法 $G[Z]$ 的语言。</p>
 <h4 id="规范推导和规范规约"><a href="#规范推导和规范规约" class="headerlink" title="规范推导和规范规约"></a>规范推导和规范规约</h4><p>规范推导指的就是最右推导</p>
 <p>规范规约指的就是最左归约</p>
-<h3 id="文法的chomsky分类"><a href="#文法的chomsky分类" class="headerlink" title="文法的chomsky分类"></a>文法的chomsky分类</h3><pre><code>chomsky分类就是根据文法中产生式的不同将文法分为四类，每种文法对应一种语言。</code></pre><h4 id="0型文法——短语结构文法"><a href="#0型文法——短语结构文法" class="headerlink" title="0型文法——短语结构文法"></a>0型文法——短语结构文法</h4><p>文法规则中呈现： $\alpha \to \beta ,\ \alpha \in V^+, \ \beta \in V^*$ 则说这是0型文法（感觉这个条件和没有一样）。0型文法的能力相当于图灵机，可以表征任何递归可枚举集。</p>
+<h3 id="文法的chomsky分类"><a href="#文法的chomsky分类" class="headerlink" title="文法的chomsky分类"></a>文法的chomsky分类</h3><pre><code>chomsky分类就是根据文法中产生式的不同将文法分为四类，每种文法对应一种语言。
+</code></pre><h4 id="0型文法——短语结构文法"><a href="#0型文法——短语结构文法" class="headerlink" title="0型文法——短语结构文法"></a>0型文法——短语结构文法</h4><p>文法规则中呈现： $\alpha \to \beta ,\ \alpha \in V^+, \ \beta \in V^*$ 则说这是0型文法（感觉这个条件和没有一样）。0型文法的能力相当于图灵机，可以表征任何递归可枚举集。</p>
 <h4 id="1型文法——上下文有关文法"><a href="#1型文法——上下文有关文法" class="headerlink" title="1型文法——上下文有关文法"></a>1型文法——上下文有关文法</h4><p>文法规则中呈现： $\alpha_1A\alpha_2\to\alpha_1\beta\alpha_2,\ \alpha_1\in V^<em>,\ \alpha_2\in V^</em>,\ A\in V_n,\ \beta\in V^+$ 则说这是1型文法。等价定义为对于任意产生式 $x\to y \ (x,y\in V^+)$ 均有 $|x|\le |y|$ ，仅仅 $S\to \epsilon$ 除外。（个人感觉就是再说不存在 $A\to\epsilon$ 这样的产生式）</p>
 <h4 id="2型文法——上下文无关文法"><a href="#2型文法——上下文无关文法" class="headerlink" title="2型文法——上下文无关文法"></a>2型文法——上下文无关文法</h4><p>文法规则中呈现： $A\to\beta,\ A\in V_n,\ \beta\in V^+$ 则说这是2型文法，相当于对1型文法进行限制，规则中只能出现 $A\to\beta$ ，1型文法的 $\alpha_1,\ \alpha_2$ 均为 $\epsilon$ ，这就是2型文法。<strong>一般2型文法就是我们用来描述语法类的文法。</strong></p>
 <h4 id="3型文法——正规文法"><a href="#3型文法——正规文法" class="headerlink" title="3型文法——正规文法"></a>3型文法——正规文法</h4><p>文法规则中呈现</p>
