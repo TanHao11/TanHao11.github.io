@@ -302,7 +302,7 @@ $$CPU \ time = \left(\sum_{i=1}^{n}{IC}_{i} \times {CPI}_{i}\right)\times CC$$
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2020/03/13/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/%E6%96%87%E6%B3%95/" class="post-title-link" itemprop="url">文法</a>
+            <a href="/2020/03/13/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/%E6%96%87%E6%B3%95/" class="post-title-link" itemprop="url">第二章·文法</a>
         </h1>
 
         <div class="post-meta">
@@ -311,10 +311,16 @@ $$CPU \ time = \left(\sum_{i=1}^{n}{IC}_{i} \times {CPI}_{i}\right)\times CC$$
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-03-13 12:19:22 / 修改时间：16:07:59" itemprop="dateCreated datePublished" datetime="2020-03-13T12:19:22+08:00">2020-03-13</time>
+              <time title="创建时间：2020-03-13 12:19:22" itemprop="dateCreated datePublished" datetime="2020-03-13T12:19:22+08:00">2020-03-13</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-14 08:37:36" itemprop="dateModified" datetime="2020-03-14T08:37:36+08:00">2020-03-14</time>
+              </span>
 
           
 
@@ -327,7 +333,7 @@ $$CPU \ time = \left(\sum_{i=1}^{n}{IC}_{i} \times {CPI}_{i}\right)\times CC$$
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="文法："><a href="#文法：" class="headerlink" title="文法："></a>文法：</h2><h3 id="文法的四个要素：开始符号，非终结符号，终结符号，规则"><a href="#文法的四个要素：开始符号，非终结符号，终结符号，规则" class="headerlink" title="文法的四个要素：开始符号，非终结符号，终结符号，规则"></a>文法的四个要素：开始符号，非终结符号，终结符号，规则</h3><h4 id="文法的四元组表示"><a href="#文法的四元组表示" class="headerlink" title="文法的四元组表示"></a>文法的四元组表示</h4><p>因此文法的四元表示为： $G(V_n,V_t,P,Z)$</p>
+          <h2 id="第二章·文法："><a href="#第二章·文法：" class="headerlink" title="第二章·文法："></a>第二章·文法：</h2><h3 id="文法的四个要素：开始符号，非终结符号，终结符号，规则"><a href="#文法的四个要素：开始符号，非终结符号，终结符号，规则" class="headerlink" title="文法的四个要素：开始符号，非终结符号，终结符号，规则"></a>文法的四个要素：开始符号，非终结符号，终结符号，规则</h3><h4 id="文法的四元组表示"><a href="#文法的四元组表示" class="headerlink" title="文法的四元组表示"></a>文法的四元组表示</h4><p>因此文法的四元表示为： $G(V_n,V_t,P,Z)$</p>
 <p>$V_n$ 是非终结符集合，一般用大写字母表示</p>
 <p>$V_t$ 是终结符集合，一般是用小写字母表示</p>
 <p>$P$ 是规则的集合，一般是这样的： $A\to b$</p>
@@ -343,16 +349,12 @@ $$CPU \ time = \left(\sum_{i=1}^{n}{IC}_{i} \times {CPI}_{i}\right)\times CC$$
 <h4 id="规范推导和规范规约"><a href="#规范推导和规范规约" class="headerlink" title="规范推导和规范规约"></a>规范推导和规范规约</h4><p>规范推导指的就是最右推导</p>
 <p>规范规约指的就是最左归约</p>
 <h3 id="文法的chomsky分类"><a href="#文法的chomsky分类" class="headerlink" title="文法的chomsky分类"></a>文法的chomsky分类</h3><pre><code>chomsky分类就是根据文法中产生式的不同将文法分为四类，每种文法对应一种语言。
-</code></pre><h4 id="0型文法——短语结构文法"><a href="#0型文法——短语结构文法" class="headerlink" title="0型文法——短语结构文法"></a>0型文法——短语结构文法</h4><p>文法规则中呈现： $\alpha \to \beta$ , $\ \alpha \in V^+$ , $\ \beta \in V^*$ 则说这是0型文法（感觉这个条件和没有一样）。0型文法的能力相当于图灵机，可以表征任何递归可枚举集。</p>
-<h4 id="1型文法——上下文有关文法"><a href="#1型文法——上下文有关文法" class="headerlink" title="1型文法——上下文有关文法"></a>1型文法——上下文有关文法</h4><p>文法规则中呈现：  </p>
-<p>$\alpha_1 A \alpha_2 \to \alpha_1 \beta \alpha_2,$ </p>
-<p> $\alpha_1\in V^*$ ,</p>
-<p> $\alpha_2 \in V^*$ , </p>
-<p>$\ A \in V_n ,\ \beta \in V^+$ </p>
-<p>则说这是1型文法。等价定义为对于任意产生式 </p>
-<p>$x \to y \ (x,y\in V^+)$ 均有 $|x| \le |y|$ ，仅仅 $S \to \epsilon$ 除外。（个人感觉就是再说不存在 $A \to \epsilon$ 这样的产生式）</p>
-<h4 id="2型文法——上下文无关文法"><a href="#2型文法——上下文无关文法" class="headerlink" title="2型文法——上下文无关文法"></a>2型文法——上下文无关文法</h4><p>文法规则中呈现： $A \to \beta,\ A\in V_n,\ \beta \in V^+$ 则说这是2型文法，相当于对1型文法进行限制，规则中只能出现 $A\to\beta$ ，1型文法的 $\alpha_1,\ \alpha_2$ 均为 $\epsilon$ ，这就是2型文法。<strong>一般2型文法就是我们用来描述语法类的文法。</strong></p>
-<h4 id="3型文法——正规文法"><a href="#3型文法——正规文法" class="headerlink" title="3型文法——正规文法"></a>3型文法——正规文法</h4><p>文法规则中呈现</p>
+</code></pre><h4 id="0型文法——短语结构文法"><a href="#0型文法——短语结构文法" class="headerlink" title="0型文法——短语结构文法"></a>0型文法——短语结构文法</h4><p>文法规则中呈现： $\alpha \to \beta ,\ \alpha \in V^+, \ \beta \in V^*$ 则说这是0型文法（感觉这个条件和没有一样）。0型文法的能力相当于图灵机，可以表征任何递归可枚举集。</p>
+<h4 id="1型文法——上下文有关文法"><a href="#1型文法——上下文有关文法" class="headerlink" title="1型文法——上下文有关文法"></a>1型文法——上下文有关文法</h4><p>文法规则中呈现： $\alpha_1A\alpha_2\to\alpha_1\beta\alpha_2,\ \alpha_1\in V^<em>,\ \alpha_2\in V^</em>,\ A\in V_n,\ \beta\in V^+$ 则说这是1型文法。等价定义为对于任意产生式 $x\to y \ (x,y\in V^+)$ 均有 $|x|\le |y|$ ，仅仅 $S\to \epsilon$ 除外。（个人感觉就是再说不存在 $A\to\epsilon$ 这样的产生式）</p>
+<h4 id="2型文法——上下文无关文法"><a href="#2型文法——上下文无关文法" class="headerlink" title="2型文法——上下文无关文法"></a>2型文法——上下文无关文法</h4><p>文法规则中呈现： $A\to\beta,\ A\in V_n,\ \beta\in V^+$ 则说这是2型文法，相当于对1型文法进行限制，规则中只能出现 $A\to\beta$ ，1型文法的 $\alpha_1,\ \alpha_2$ 均为 $\epsilon$ ，这就是2型文法。<strong>一般2型文法就是我们用来描述语法类的文法。</strong></p>
+<h4 id="3型文法——正规文法"><a href="#3型文法——正规文法" class="headerlink" title="3型文法——正规文法"></a>3型文法——正规文法</h4><p>文法规则中呈现： $A\to aB | a, A\in V_n,B\in V_n,a\in V_t$ 则说这是右线形正则文法。</p>
+<p>若文法规则中呈现： $A\to Ba | a, A\in V_n,B\in V_n,a\in V_t$ 则说这是左线形正则文法。</p>
+<p>左线形右线形正则文法可以使用有限自动机来使用，而且由于产生的终结符始终在一侧，因此可以画出状态图。</p>
 
       
     </div>
@@ -386,7 +388,7 @@ $$CPU \ time = \left(\sum_{i=1}^{n}{IC}_{i} \times {CPI}_{i}\right)\times CC$$
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2020/03/13/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/%E5%8F%A5%E6%B3%95%E7%BB%93%E6%9E%84/" class="post-title-link" itemprop="url">句法结构</a>
+            <a href="/2020/03/13/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/%E5%8F%A5%E6%B3%95%E7%BB%93%E6%9E%84/" class="post-title-link" itemprop="url">第二章·句法结构</a>
         </h1>
 
         <div class="post-meta">
@@ -395,10 +397,16 @@ $$CPU \ time = \left(\sum_{i=1}^{n}{IC}_{i} \times {CPI}_{i}\right)\times CC$$
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-03-13 12:19:13 / 修改时间：15:59:03" itemprop="dateCreated datePublished" datetime="2020-03-13T12:19:13+08:00">2020-03-13</time>
+              <time title="创建时间：2020-03-13 12:19:13" itemprop="dateCreated datePublished" datetime="2020-03-13T12:19:13+08:00">2020-03-13</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-14 08:37:12" itemprop="dateModified" datetime="2020-03-14T08:37:12+08:00">2020-03-14</time>
+              </span>
 
           
 
@@ -411,16 +419,14 @@ $$CPU \ time = \left(\sum_{i=1}^{n}{IC}_{i} \times {CPI}_{i}\right)\times CC$$
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="字母表"><a href="#字母表" class="headerlink" title="字母表"></a>字母表</h3><p>字母表就是由元素组成的非空有穷集合（元素又称符号）</p>
-<h3 id="符号串"><a href="#符号串" class="headerlink" title="符号串"></a>符号串</h3><p>符号串就是由符号组成的有穷序列。</p>
-<p>符号串的长度是有限的，但是符号串的种类是无限的。</p>
-<h3 id="连接"><a href="#连接" class="headerlink" title="连接"></a>连接</h3><p>设有符号串<code>x</code>,<code>y</code>，把<code>y</code>的符号写在<code>x</code>的符号之后所得的符号串，叫做<code>x</code>与<code>y</code>的连接，记<code>xy</code></p>
-<h3 id="方幂"><a href="#方幂" class="headerlink" title="方幂"></a>方幂</h3><p>设有符号串<code>x</code>，则<code>x</code>的<code>n</code>次自身连接称为x的n次方幂，记为 $x^n$ </p>
+          <h2 id="第二章·句法结构"><a href="#第二章·句法结构" class="headerlink" title="第二章·句法结构"></a>第二章·句法结构</h2><h3 id="字母表"><a href="#字母表" class="headerlink" title="字母表"></a>字母表</h3><p>字母表就是由元素组成的非空有穷集合（元素又称符号）</p>
+<h3 id="符号串"><a href="#符号串" class="headerlink" title="符号串"></a>符号串</h3><p>符号串就是由符号组成的有穷序列</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 连接</span><br><span class="line"></span><br><span class="line">设有符号串&#96;&#96;&#96;x&#96;&#96;&#96;,&#96;&#96;&#96;y&#96;&#96;&#96;，把&#96;&#96;&#96;y&#96;&#96;&#96;的符号写在&#96;&#96;&#96;x&#96;&#96;&#96;的符号之后所得的符号串，叫做&#96;&#96;&#96;x&#96;&#96;&#96;与&#96;&#96;&#96;y&#96;&#96;&#96;的连接，记&#96;&#96;&#96;xy</span><br></pre></td></tr></table></figure>
+<h3 id="方幂"><a href="#方幂" class="headerlink" title="方幂"></a>方幂</h3><p>设有符号串<code>x</code>，则<code>x</code>的<code>n</code>次自身连接称为x的n次方幂，记为<code>x^n</code> </p>
 <p>特别: $X^0 = \epsilon$</p>
 <h3 id="和："><a href="#和：" class="headerlink" title="和："></a>和：</h3><p>  $A+B={w|w ∈A或w ∈B}$ </p>
 <h3 id="积："><a href="#积：" class="headerlink" title="积："></a>积：</h3><p>$AB={xy|x ∈A且y ∈B}$</p>
-<h3 id="符号串-符号）集合的正闭包"><a href="#符号串-符号）集合的正闭包" class="headerlink" title="符号串(符号）集合的正闭包"></a>符号串(符号）集合的正闭包</h3><p>设 $A$ 为符号集合，则定义 $A$ 的正闭包 $A_+$ 为：</p>
-<p> $A_+ = A_1 ∪ A_2 ∪ A_3 ∪ …… ∪ A_n ∪ ……$</p>
+<h3 id="符号串-符号）集合的正闭包"><a href="#符号串-符号）集合的正闭包" class="headerlink" title="符号串(符号）集合的正闭包"></a>符号串(符号）集合的正闭包</h3><p>设 $A$ 为符号集合，则定义 $A$ 的正闭包 $A<em>+$ 为： $A</em>+=A_1∪A_2 ∪ A_3 ∪……∪ A_n ∪……$</p>
 <h3 id="符号串-符号）集合的闭包"><a href="#符号串-符号）集合的闭包" class="headerlink" title="符号串(符号）集合的闭包"></a>符号串(符号）集合的闭包</h3><p>$A^*=A_+ ∪ A_0$</p>
 
       
