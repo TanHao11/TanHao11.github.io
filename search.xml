@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>计算机体系结构1.4计算机的快慢</title>
+    <url>/2020/03/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%841.4%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E5%BF%AB%E6%85%A2/</url>
+    <content><![CDATA[<h2 id="计算机体系结构1-4——计算机的快慢"><a href="#计算机体系结构1-4——计算机的快慢" class="headerlink" title="计算机体系结构1.4——计算机的快慢"></a>计算机体系结构1.4——计算机的快慢</h2><h3 id="1-4-1-衡量计算机的快慢"><a href="#1-4-1-衡量计算机的快慢" class="headerlink" title="1.4.1 衡量计算机的快慢"></a>1.4.1 衡量计算机的快慢</h3><h4 id="对用户来说"><a href="#对用户来说" class="headerlink" title="对用户来说"></a>对用户来说</h4><p>​        计算机的快慢是由<strong>响应时间</strong>决定的，也就是计算机收到信息到计算机最后执行完成的时间</p>
+<h4 id="对计算机中心经理来说"><a href="#对计算机中心经理来说" class="headerlink" title="对计算机中心经理来说"></a>对计算机中心经理来说</h4><p>​        计算机的快慢是由<strong>吞吐量</strong>决定的，也就是在指定的时间里面做更多的工作</p>
+<h3 id="1-4-2-X计算机比Y计算机快的含义"><a href="#1-4-2-X计算机比Y计算机快的含义" class="headerlink" title="1.4.2 X计算机比Y计算机快的含义"></a>1.4.2 X计算机比Y计算机快的含义</h3><script type="math/tex; mode=display">\frac {Excution\ time_y }{Excuiton\ time_x}=n</script><p>​        我们这就可以说计算机<code>x</code>比计算机<code>y</code>快<code>n</code>倍。</p>
+<p>​        因为时间是性能的倒数：</p>
+<script type="math/tex; mode=display">Performance_x = \frac 1 {Excution\ time_x}</script><h3 id="1-4-3-测量计算机性能的指标"><a href="#1-4-3-测量计算机性能的指标" class="headerlink" title="1.4.3 测量计算机性能的指标"></a>1.4.3 测量计算机性能的指标</h3><h4 id="用户CPU时间"><a href="#用户CPU时间" class="headerlink" title="用户CPU时间"></a>用户CPU时间</h4><p>​        用户程序耗费的CPU时间</p>
+<h4 id="系统CPU时间"><a href="#系统CPU时间" class="headerlink" title="系统CPU时间"></a>系统CPU时间</h4><p>​        用户程序运行期间操作系统耗费的CPU时间</p>
+<h3 id="1-4-4-测量计算机性能的程序"><a href="#1-4-4-测量计算机性能的程序" class="headerlink" title="1.4.4 测量计算机性能的程序"></a>1.4.4 测量计算机性能的程序</h3><h4 id="1-真实应用"><a href="#1-真实应用" class="headerlink" title="1. 真实应用"></a>1. 真实应用</h4><p>​        这个很直白，就是真实应用</p>
+<h4 id="2-核心程序"><a href="#2-核心程序" class="headerlink" title="2. 核心程序"></a>2. 核心程序</h4><p>​        从真实程序之中截取的核心代码组成的核心程序，无实际用途</p>
+<h4 id="3-玩具测试基准程序"><a href="#3-玩具测试基准程序" class="headerlink" title="3. 玩具测试基准程序"></a>3. 玩具测试基准程序</h4><p>​        体量小，适用于所有的计算机</p>
+<h4 id="4-合成测试基准程序"><a href="#4-合成测试基准程序" class="headerlink" title="4. 合成测试基准程序"></a>4. 合成测试基准程序</h4><p>​        匹配大量程序中操作和操作数的平均频率，一般不会有用户会自己产生合成测试基准程序</p>
+<p>​        </p>
+]]></content>
+      <categories>
+        <category>大三学习笔记</category>
+      </categories>
+      <tags>
+        <tag>计算机体系结构</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机体系结构1.5计算机设计要素</title>
+    <url>/2020/03/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%841.5%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AE%BE%E8%AE%A1%E8%A6%81%E7%B4%A0/</url>
+    <content><![CDATA[<h2 id="计算机体系结构1-5——计算机设计要素"><a href="#计算机体系结构1-5——计算机设计要素" class="headerlink" title="计算机体系结构1.5——计算机设计要素"></a>计算机体系结构1.5——计算机设计要素</h2><h3 id="1-5-1-大概率事件优先原则"><a href="#1-5-1-大概率事件优先原则" class="headerlink" title="1.5.1 大概率事件优先原则"></a>1.5.1 大概率事件优先原则</h3><p>​        想要提升计算机性能，先从频率较高的开始</p>
+<h3 id="1-5-2-阿姆达尔定律"><a href="#1-5-2-阿姆达尔定律" class="headerlink" title="1.5.2 阿姆达尔定律"></a>1.5.2 阿姆达尔定律</h3><p>​        定律的简述：加快某部件执行速度得到的性能提高（加速比）与该部件在系统中执行的总的时间比例有关</p>
+<p>​        （两个要点：加速比和执行的总时间比例）</p>
+<h4 id="1-加速比"><a href="#1-加速比" class="headerlink" title="1. 加速比"></a>1. 加速比</h4>
+ $$系统加速比=\frac {{系统性能}_{改进后}}{{系统性能}_{改进前}}=\frac{{总执行时间}_{改进后}}{{总执行时间}_{改进前}}$$
+
+<p>提取出来就是部件改进后的性能提高Se：</p>
+<script type="math/tex; mode=display">{Speedup}_{enhanced}\gt 1</script><h4 id="2-可改进比例"><a href="#2-可改进比例" class="headerlink" title="2. 可改进比例"></a>2. 可改进比例</h4><script type="math/tex; mode=display">{Fraction}_{enhanced}\le1</script><h4 id="系统加速比（阿姆达尔公式）"><a href="#系统加速比（阿姆达尔公式）" class="headerlink" title="系统加速比（阿姆达尔公式）"></a>系统加速比（阿姆达尔公式）</h4>
+$${Speedup}_{overall}=\frac {{Excution\ time}_{old}}{{Excution \ time}_{new}}=\frac{1}{(1-{Fraction}_{enhanced})+\frac{{Fraction}_{enhanced}}{{Speedup}_{enhanced}}}$$
+
+<h3 id="1-5-3-CPU性能方程"><a href="#1-5-3-CPU性能方程" class="headerlink" title="1.5.3 CPU性能方程"></a>1.5.3 CPU性能方程</h3><script type="math/tex; mode=display">CPU \ time=Instruction \  Count \times Clock \ Cycle \ Time \times Cycles \ Per \ Instrument</script><p>​        即：</p>
+<script type="math/tex; mode=display">CPU \ time=IC \times CC \times CPI</script><p>​        其中<code>CPU time</code>的大小决定<code>CPU</code>性能，<code>IC</code>表示指令的数量，<code>CC</code>表示时钟周期，<code>CPI</code>表示每条指令需要花的时间。这只是比较简单的公式，继续细化之后能够得到新的公式：<br>
+$$CPU \ time = \left(\sum_{i=1}^{n}{IC}_{i} \times {CPI}_{i}\right)\times CC$$
+</p>
+<h3 id="1-5-4-访问的局部性原理"><a href="#1-5-4-访问的局部性原理" class="headerlink" title="1.5.4 访问的局部性原理"></a>1.5.4 访问的局部性原理</h3><h4 id="程序倾向于重用刚用过-的数据和指令"><a href="#程序倾向于重用刚用过-的数据和指令" class="headerlink" title="程序倾向于重用刚用过 的数据和指令"></a>程序倾向于重用刚用过 的数据和指令</h4><h4 id="经验-90-的时间运行于10-的程序上"><a href="#经验-90-的时间运行于10-的程序上" class="headerlink" title="经验:90%的时间运行于10%的程序上"></a>经验:90%的时间运行于10%的程序上</h4><h4 id="可根据最近的访问，以合理的精-确度预测，未来会用到哪些指令和数据"><a href="#可根据最近的访问，以合理的精-确度预测，未来会用到哪些指令和数据" class="headerlink" title="可根据最近的访问，以合理的精 确度预测，未来会用到哪些指令和数据"></a>可根据最近的访问，以合理的精 确度预测，未来会用到哪些指令和数据</h4>]]></content>
+      <categories>
+        <category>大三学习笔记</category>
+      </categories>
+      <tags>
+        <tag>计算机体系结构</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>编译原理第二章·文法</title>
+    <url>/2020/03/13/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/%E6%96%87%E6%B3%95/</url>
+    <content><![CDATA[<h2 id="第二章·文法："><a href="#第二章·文法：" class="headerlink" title="第二章·文法："></a>第二章·文法：</h2><h3 id="文法的四个要素：开始符号，非终结符号，终结符号，规则"><a href="#文法的四个要素：开始符号，非终结符号，终结符号，规则" class="headerlink" title="文法的四个要素：开始符号，非终结符号，终结符号，规则"></a>文法的四个要素：开始符号，非终结符号，终结符号，规则</h3><h4 id="文法的四元组表示"><a href="#文法的四元组表示" class="headerlink" title="文法的四元组表示"></a>文法的四元组表示</h4><p>因此文法的四元表示为： $G(V_n,V_t,P,Z)$</p>
+<p>$V_n$ 是非终结符集合，一般用大写字母表示</p>
+<p>$V_t$ 是终结符集合，一般是用小写字母表示</p>
+<p>$P$ 是规则的集合，一般是这样的： $A\to b$</p>
+<p>$Z$ 是开始符号，一切从这个符号开始推导</p>
+<h4 id="文法的BNF表示"><a href="#文法的BNF表示" class="headerlink" title="文法的BNF表示"></a>文法的BNF表示</h4><p>$G[S]:$</p>
+<p>$S\to aB|bA$</p>
+<p>$A\to a$</p>
+<p>$B\to b$</p>
+<h3 id="推导"><a href="#推导" class="headerlink" title="推导"></a>推导</h3><p>根据文法的规则可以进行推导，推导的符号记为 $=&gt;$ 。推导的步骤 $\ge0$ 记做 $=^*&gt;$ ；步骤 $\gt0$ 记做 $=^+&gt;$ 。</p>
+<h3 id="语言的形式定义"><a href="#语言的形式定义" class="headerlink" title="语言的形式定义"></a>语言的形式定义</h3><h4 id="句型"><a href="#句型" class="headerlink" title="句型"></a>句型</h4><p>凡是由识别符号推导出来的所有元素都在 $V^*$ 上的符号串就叫做句型。</p>
+<h4 id="句子"><a href="#句子" class="headerlink" title="句子"></a>句子</h4><p>由起始符号 $Z$ 推导出来的<strong><code>终结符号</code></strong>组成的符号串叫做句子。</p>
+<h4 id="语言"><a href="#语言" class="headerlink" title="语言"></a>语言</h4><p>所有 $G[Z]$ 文法的句子的集合叫做文法 $G[Z]$ 的语言。</p>
+<h4 id="规范推导和规范规约"><a href="#规范推导和规范规约" class="headerlink" title="规范推导和规范规约"></a>规范推导和规范规约</h4><p>规范推导指的就是最右推导</p>
+<p>规范规约指的就是最左归约</p>
+<h3 id="文法的chomsky分类"><a href="#文法的chomsky分类" class="headerlink" title="文法的chomsky分类"></a>文法的chomsky分类</h3><pre><code>chomsky分类就是根据文法中产生式的不同将文法分为四类，每种文法对应一种语言。
+</code></pre><h4 id="0型文法——短语结构文法"><a href="#0型文法——短语结构文法" class="headerlink" title="0型文法——短语结构文法"></a>0型文法——短语结构文法</h4><p>文法规则中呈现： $\alpha \to \beta ,\ \alpha \in V^+, \ \beta \in V^*$ 则说这是0型文法（感觉这个条件和没有一样）。0型文法的能力相当于图灵机，可以表征任何递归可枚举集。</p>
+<h4 id="1型文法——上下文有关文法"><a href="#1型文法——上下文有关文法" class="headerlink" title="1型文法——上下文有关文法"></a>1型文法——上下文有关文法</h4><p>文法规则中呈现： 
+$\alpha_1A\alpha_2\to\alpha_1\beta\alpha_2,\ \alpha_1\in V^*,\ \alpha_2\in V^*,\ A\in V_n,\ \beta\in V^+$ 
+<br>则说这是1型文法。等价定义为对于任意产生式 $x\to y \ (x,y\in V^+)$ 均有 $|x|\le |y|$ ，仅仅 $S\to \epsilon$ 除外。（个人感觉就是再说不存在 $A\to\epsilon$ 这样的产生式）</p>
+<h4 id="2型文法——上下文无关文法"><a href="#2型文法——上下文无关文法" class="headerlink" title="2型文法——上下文无关文法"></a>2型文法——上下文无关文法</h4><p>文法规则中呈现：  $A\to\beta,\ A\in V_n,\ \beta\in V^+$  则说这是2型文法，相当于对1型文法进行限制，规则中只能出现 $A\to\beta$ ，1型文法的 $\alpha_1,\ \alpha_2$ 均为 $\epsilon$ ，这就是2型文法。<strong>一般2型文法就是我们用来描述语法类的文法。</strong></p>
+<h4 id="3型文法——正规文法"><a href="#3型文法——正规文法" class="headerlink" title="3型文法——正规文法"></a>3型文法——正规文法</h4><p>文法规则中呈现： $A\to aB | a, A\in V_n,B\in V_n,a\in V_t$ 则说这是右线形正则文法。</p>
+<p>若文法规则中呈现： $A\to Ba | a, A\in V_n,B\in V_n,a\in V_t$ 则说这是左线形正则文法。</p>
+<p>左线形右线形正则文法可以使用有限自动机来使用，而且由于产生的终结符始终在一侧，因此可以画出状态图。</p>
+]]></content>
+      <categories>
+        <category>大三学习笔记</category>
+      </categories>
+      <tags>
+        <tag>编译原理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>编译原理第二章·句法结构</title>
+    <url>/2020/03/13/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/%E5%8F%A5%E6%B3%95%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<h2 id="第二章·句法结构"><a href="#第二章·句法结构" class="headerlink" title="第二章·句法结构"></a>第二章·句法结构</h2><h3 id="字母表"><a href="#字母表" class="headerlink" title="字母表"></a>字母表</h3><p>字母表就是由元素组成的非空有穷集合（元素又称符号）</p>
+<h3 id="符号串"><a href="#符号串" class="headerlink" title="符号串"></a>符号串</h3><p>符号串就是由符号组成的有穷序列<br>符号串的长度是有限的，但是符号串的种类是无限的### 连接</p>
+<h3 id="连接"><a href="#连接" class="headerlink" title="连接"></a>连接</h3><p>设有符号串<code>x</code>,<code>y</code>，把<code>y</code>的符号写在<code>x</code>的符号之后所得的符号串，叫做<code>x</code>与<code>y</code>的连接，记<code>xy</code></p>
+<h3 id="方幂"><a href="#方幂" class="headerlink" title="方幂"></a>方幂</h3><p>设有符号串<code>x</code>，则<code>x</code>的<code>n</code>次自身连接称为x的n次方幂，记为<code>x^n</code> </p>
+<p>特别:  $X^0 = \epsilon$</p>
+<h3 id="和："><a href="#和：" class="headerlink" title="和："></a>和：</h3>
+  $A+B=\{w|w ∈A或w ∈B\}$ 
+
+<h3 id="积："><a href="#积：" class="headerlink" title="积："></a>积：</h3>
+$AB=\{xy|x ∈A且y ∈B\}$
+
+<h3 id="符号串-符号）集合的正闭包"><a href="#符号串-符号）集合的正闭包" class="headerlink" title="符号串(符号）集合的正闭包"></a>符号串(符号）集合的正闭包</h3><p>设 $A$ 为符号集合，则定义 $A$ 的正闭包 $A_+$ 为： </p>
+<p>$A_+=A_1∪A_2 ∪ A_3 ∪…∪ A_n ∪…$</p>
+<h3 id="符号串-符号）集合的闭包"><a href="#符号串-符号）集合的闭包" class="headerlink" title="符号串(符号）集合的闭包"></a>符号串(符号）集合的闭包</h3><p>$A^*=A_+ ∪ A_0$</p>
+]]></content>
+      <categories>
+        <category>大三学习笔记</category>
+      </categories>
+      <tags>
+        <tag>编译原理</tag>
+      </tags>
+  </entry>
+</search>
