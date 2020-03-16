@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>2020疫情·返回宜昌</title>
-    <url>/2020/03/14/%E5%A4%A7%E4%BA%8B%E8%AE%B0/2020%E7%96%AB%E6%83%85%C2%B7%E8%BF%94%E5%9B%9E%E5%AE%9C%E6%98%8C/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>生活记录</category>
-      </categories>
-      <tags>
-        <tag>大事记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>计算机体系结构1.4计算机的快慢</title>
     <url>/2020/03/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%841.4%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E5%BF%AB%E6%85%A2/</url>
     <content><![CDATA[<h2 id="计算机体系结构1-4——计算机的快慢"><a href="#计算机体系结构1-4——计算机的快慢" class="headerlink" title="计算机体系结构1.4——计算机的快慢"></a>计算机体系结构1.4——计算机的快慢</h2><h3 id="1-4-1-衡量计算机的快慢"><a href="#1-4-1-衡量计算机的快慢" class="headerlink" title="1.4.1 衡量计算机的快慢"></a>1.4.1 衡量计算机的快慢</h3><h4 id="对用户来说"><a href="#对用户来说" class="headerlink" title="对用户来说"></a>对用户来说</h4><p>​        计算机的快慢是由<strong>响应时间</strong>决定的，也就是计算机收到信息到计算机最后执行完成的时间</p>
